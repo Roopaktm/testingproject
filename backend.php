@@ -16,16 +16,16 @@
     
     $headers = "From: $email_from \r\n";
     $headers .= "Reply-to: $visitors_email \r\n";
-
+    //echo "hi";
     if(mail($to,$email_subject,$email_body,$headers)){
         echo "Email sent successfully";
         echo "<script>alert('Successfully submitted!!! \\n$name\\n$visitors_email\\n$mobile_num\\n$message')</script>";
-        header("Location: index.html");
+        //header("Location: index.html");
     }
     else{
         echo "<script>alert('Error in sending details!!! \\n$name\\n$visitors_email\\n$mobile_num\\n$message')</script>";
-
     }
+    //echo "hi";
     //header("Location: index.html");
 
 ?>  
