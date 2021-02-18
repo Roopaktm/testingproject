@@ -19,10 +19,12 @@
 
     if(mail($to,$email_subject,$email_body,$headers)){
         echo "Email sent successfully";
+        echo "<script>alert('Successfully submitted!!! \\n$name\\n$visitors_email\\n$mobile_num\\n$message')</script>";
         header("Location: index.html");
     }
     else{
-        echo "Email failed to send"; 
+        echo "<script>alert('Error in sending details!!! \\n$name\\n$visitors_email\\n$mobile_num\\n$message')</script>";
+
     }
     //header("Location: index.html");
 
