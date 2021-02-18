@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url(bg5.webp);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.form-title
+{
+    margin-top: 85px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 3s ease-in-out;
+}
+
+form
+{
+    margin-top: 50px;
+    transition: all 3s ease-in-out;
+}
+
+.form-cont
+{
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: honeydew;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input
+{
+    height: 45px;
+}
+
+form .submit 
+{
+    background: rgb(213, 235, 135);
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover
+{
+    background-color: goldenrod;
+    cursor: pointer;
+}

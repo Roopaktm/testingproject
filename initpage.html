@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entellus Form</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <div class="form-title">
+        <h1>hi welcome</h1>
+        <h2>we are ready to serve</h2>
+    </div>
+    <div class="land-form">
+        <form id="land-form" method="POST" action="php/backend.php">
+            <input name="name" type="text" class="form-cont" placeholder="Your Name" required>
+            <br>
+            <input name="email" type="email" class="form-cont" placeholder="Your Email" required><br>
+            <input name="phone" type="phone" class="form-cont" placeholder="Your Mobile Number" required><br>
+            <textarea name="message" class="form-cont" placeholder="Leave us Message" row="4" required></textarea><br>
+            <input type="submit" class="form-cont submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
