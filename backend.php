@@ -2,7 +2,7 @@
     $name = $_POST['name'];
     $visitors_email = $_POST['email'];
     $mobile_num = $_POST['phone'];
-    $message = $_POST['message']
+    $message = $_POST['message'];
     
     $email_from = 'rakshith178@gmail.com';
 
@@ -15,9 +15,15 @@
     $to = 'rakshith1777@gmail.com';
     
     $headers = "From: $email_from \r\n";
-    $headers = "Reply-to: $visitors_email \r\n";
+    $headers .= "Reply-to: $visitors_email \r\n";
 
-    mail($to,$email_subject,$email_body,$headers);
-    header("Location: initpage.html");
+    if(mail($to,$email_subject,$email_body,$headers)){
+        echo "Email sent successfully";
+        header("Location: index.html");
+    }
+    else{
+        echo "Email failed to send"; 
+    }
+    //header("Location: index.html");
 
 ?>  
